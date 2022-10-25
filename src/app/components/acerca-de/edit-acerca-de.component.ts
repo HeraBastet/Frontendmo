@@ -28,8 +28,7 @@ export class EditAcercaDeComponent implements OnInit {
       }
     )
     if( this.persona ) {
-      const image :any = this.imageService.getImages()
-      this.persona.img = image.url
+      this.persona.img = this.imageService.url
     }
   }
 
