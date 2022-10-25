@@ -12,7 +12,7 @@ export const environment = {
     authDomain: 'frondendmo.firebaseapp.com',
     messagingSenderId: '345982934458',
   },
-  production: false,
+  production: true,
 
   // URL: 'http://localhost:8080/',
   URL: 'https://backendmo.herokuapp.com/'
