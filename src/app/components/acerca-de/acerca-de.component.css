@@ -1,24 +1,8 @@
 .row{
     padding: 20px;
 }
-
-.fotoperfil {
-    position: relative;
-}
-
-.hfp {
-    position: absolute;
-    top: -140px;
-    padding: 0;
-}
-
-.fp2 {
-    width: 100%;
-    height: auto;
-}
-
 div{
-    background-color: #88B7B5;
+    background-color: #a1b5cb;
     text-align: center;
 }
 /*Estilo de la foto de perfil*/
@@ -44,14 +28,6 @@ div{
 }
 
 /*etiqueta nombre*/
-@media (min-width: 1200px){
-    #nombre{
-        font-weight: bold;
-        margin-top: 30%;
-        padding-top: 100px;
-    }
-}
-
 #nombre{
     font-weight: bold;
     margin-top: 30%;

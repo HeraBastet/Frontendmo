@@ -1,14 +1,30 @@
 <div class="row">
     <h1>Proyectos realizados</h1>
-    <div class="contenedor">
-        <div>
-            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-                <h1>Mensajeria</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio tempore voluptas eligendi aut a libero deleniti incidunt commodi facere voluptates voluptatem reprehenderit, aspernatur molestiae possimus officia veritatis repellendus beatae?</p>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-                <img src="../../../assets/mensajeria.png" class="img-fluid img-proyecto" >
-            </div>
-        </div>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoPro" *ngIf="isLogged">
+            Nuevo proyecto
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyecto of proyecto">
+                    <td>
+                        <h2>{{Proyecto.nombreE}}</h2>
+                    </td>
+                    <td>{{Proyecto.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-secondary" routerLink="/editPro/{{Proyecto.id}}">
+                            <i class="bi bi-pencil-square"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                            <i class="bi bi-trash"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
