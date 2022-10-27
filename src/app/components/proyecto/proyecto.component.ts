@@ -34,7 +34,7 @@ export class ProyectoComponent implements OnInit {
         data => {
           this.cargarProyecto();
         }, err => {
-          alert("No se pudo borrar la experiencia");
+          alert(err.error.mensaje);
         }
       )
     }

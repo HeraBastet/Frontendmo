@@ -34,7 +34,7 @@ export class EditSkillComponent implements OnInit {
       data => {
         this.router.navigate(['']);
       }, err => {
-        alert("Error al modificar la skill");
+        alert(err.error.mensaje);
         this.router.navigate(['']);
       }
     )

@@ -33,7 +33,7 @@ export class EditproyectoComponent implements OnInit {
       data => {
         this.router.navigate(['']);
       }, err =>{
-         alert("Error al modificar proyecto");
+         alert(err.error.mensaje);
          this.router.navigate(['']);
       }
     )
