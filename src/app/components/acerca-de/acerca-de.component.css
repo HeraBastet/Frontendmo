@@ -8,27 +8,28 @@ div{
 /*Estilo de la foto de perfil*/
 @media (min-width: 576px){
     #fotodeperfil{
-        position: absolute;
-        width: 13%;
+        position: relative;
+        width: 100%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 3%;
-        top:600px;
+        bottom: 100px;
+        margin-bottom: -55px;
     }
 }
 @media (max-width: 575px){
     #fotodeperfil{
-        position: absolute;
-        width: 30%;
+        position: relative;
+        width: 100%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 33%;
-        top:950px;
+        bottom: 50px;
+        margin-bottom: -55px;
     }
 }
 
 /*etiqueta nombre*/
 #nombre{
     font-weight: bold;
-    margin-top: 30%;
+    font-size: 24px;
+
 }

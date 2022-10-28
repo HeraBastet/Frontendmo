@@ -3,8 +3,10 @@
     <div class="col-lg-2">
         <button type = "button" routerLink = "/newskill" class = "btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
     </div>
+</div>
 
-    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+<div class="row">
+    <div class="text-center col-sm-2 col-md-2 col-lg-2 circulo" *ngFor="let skill of skill">
         <circle-progress
         [percent]="(skill.porcentaje)" 
         [radius]="90" [imageSrc]="''" 
@@ -35,94 +37,4 @@
             </td>
         </div>
     </div>
-    <!-- <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="90"
-            [radius]="90"
-            [imageSrc]="'../assets/CSS.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="70"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="2"
-            [outerStrokeColor]="'#5a5ff8'"
-            [innerStrokeColor]="'#5a5ff8'"
-            [animation]="true"
-            [animationDuration]="600"
-        ></circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="80"
-            [radius]="90"
-            [imageSrc]="'../assets/js.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="70"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="2"
-            [outerStrokeColor]="'#d3e405'"
-            [innerStrokeColor]="'#d3e405'"
-            [animation]="true"
-            [animationDuration]="600"
-        ></circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="65"
-            [radius]="90"
-            [imageSrc]="'../assets/gith1.png'"
-            [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="70"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="2"
-            [outerStrokeColor]="'#6d66ff'"
-            [innerStrokeColor]="'#6d66ff'"
-            [animation]="true"
-            [animationDuration]="600"
-        ></circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="70"
-            [radius]="90"
-            [imageSrc]="'../assets/flag.png'"
-            [showImage]="true"
-            [imageHeight]="90"
-            [imageWidth]="90"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="2"
-            [outerStrokeColor]="'#c282ee'"
-            [innerStrokeColor]="'#c282ee'"
-            [animation]="true"
-            [animationDuration]="600"
-        ></circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="100"
-            [radius]="90"
-            [imageSrc]="'../assets/megaphone.png'"
-            [showImage]="true"
-            [imageHeight]="90"
-            [imageWidth]="90"
-            [showUnits]="false"
-            [showSubtitle]="false"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="2"
-            [outerStrokeColor]="'#00005b'"
-            [innerStrokeColor]="'#00005b'"
-            [animation]="true"
-            [animationDuration]="600"
-        ></circle-progress>
-    </div> -->
 </div>
